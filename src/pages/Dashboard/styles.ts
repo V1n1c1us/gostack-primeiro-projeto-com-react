@@ -112,6 +112,12 @@ export const Repositories = styled.div`
     svg {
       margin-left: auto;
       color: #cbcbd6;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: rotate(180deg);
+        color: #04d361;
+      }
     }
   }
 `;
