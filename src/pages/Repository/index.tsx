@@ -25,6 +25,7 @@ interface Repository {
 interface Issue {
   id: number;
   title: string;
+  html_url: string;
   user: {
     login: string;
   };
@@ -46,6 +47,8 @@ const Repository: React.FC = () => {
         setIssues(response.data);
       });
     }
+
+    loadData();
   }, [params.repository]);
 
   return (
@@ -58,39 +61,45 @@ const Repository: React.FC = () => {
         </Link>
       </Header>
 
-      <RepositoryInfo>
-        <header>
-          <img src={repository?.owner.avatar_url} alt="Profile" />
-          <div>
-            <strong>rocketseat/unform</strong>
-            <p>Descrição do repo</p>
-          </div>
-        </header>
-        <ul>
-          <li>
-            <strong>1808</strong>
-            <span>Stars</span>
-          </li>
-          <li>
-            <strong>48</strong>
-            <span>Forks</span>
-          </li>
-          <li>
-            <strong>67</strong>
-            <span>Issues abertas</span>
-          </li>
-        </ul>
-      </RepositoryInfo>
+      {repository && (
+        <RepositoryInfo>
+          <header>
+            <img
+              src={repository.owner.avatar_url}
+              alt={repository.owner.login}
+            />
+            <div>
+              <strong>{repository.full_name}</strong>
+              <p>{repository.description}</p>
+            </div>
+          </header>
+          <ul>
+            <li>
+              <strong>{repository.stargazers_count}</strong>
+              <span>Stars</span>
+            </li>
+            <li>
+              <strong>{repository.forks_count}</strong>
+              <span>Forks</span>
+            </li>
+            <li>
+              <strong>{repository.open_issues_count}</strong>
+              <span>Issues abertas</span>
+            </li>
+          </ul>
+        </RepositoryInfo>
+      )}
 
       <Issues>
-        <Link to="asdas">
-          <div>
-            <strong>repository.full_nme</strong>
-            <p>repository.descripton</p>
-          </div>
-
-          <FiChevronRight size={20} />
-        </Link>
+        {issues.map((issue) => (
+          <a key={issue.id} href={issue.html_url}>
+            <div>
+              <strong>{issue.title}</strong>
+              <p>{issue.user.login}</p>
+            </div>
+            <FiChevronRight size={20} />
+          </a>
+        ))}
       </Issues>
     </>
   );
