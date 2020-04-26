@@ -11,7 +11,6 @@
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
 </p>
 
 ![App Screenshot](https://github.com/V1n1c1us/gostack-primeiro-projeto-com-react/blob/master/src/assets/img_readme.png)
@@ -48,9 +47,6 @@ $ yarn install
 # Run the app
 $ yarn start
 ```
-
-## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/react-github-repo-list/blob/master/LICENSE) for more information.
 
 ---
 
