@@ -1,44 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="React Github Explorer" src="https://github.com/V1n1c1us/gostack-primeiro-projeto-com-react/blob/master/src/assets/logo.svg"/>
+    <br>
+    React Github Explorer
+</h1>
 
-## Available Scripts
+<h4 align="center">
+  List your favorite GitHub repositories and see information and issues for each of them.
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-### `yarn start`
+![App Screenshot](https://github.com/V1n1c1us/gostack-primeiro-projeto-com-react/blob/master/src/assets/img_readme.png)
+<p align="center">
+  <a href="https://vgitexplorer.netlify.app/" target="_blank">
+    Demo on Netlify
+  </a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :rocket: Technologies
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
 
-### `yarn test`
+-  [ReactJS](https://reactjs.org/)
+-  [React Router v4](https://github.com/ReactTraining/react-router)
+-  [styled-components](https://www.styled-components.com/)
+-  [GitHub REST API v3](https://developer.github.com/v3/)
+-  [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
+  
+## :information_source: How To Use
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer. From your command line:
 
-### `yarn build`
+```bash
+# Clone this repository
+$ git clone https://github.com/V1n1c1us/gostack-primeiro-projeto-com-react.git
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Go into the repository
+$ cd react-github-repo-list
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Install dependencies
+$ yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Run the app
+$ yarn start
+```
 
-### `yarn eject`
+## :memo: License
+This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/react-github-repo-list/blob/master/LICENSE) for more information.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Made with ♥ by Vinícius Diehl de Franceschi :wave: [Get in touch!](https://www.linkedin.com/in/vin%C3%ADcius-diehl-de-franceschi-8557b3130/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
